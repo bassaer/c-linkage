@@ -8,7 +8,8 @@ char *private_message;
 char *public_message;
 
 int main() {
-  init(0, "Hello, World!");
+  char *default_message = "Hello, World!";
+  init(0, default_message);
 
   printf("== before ==\n");
   work();
@@ -19,6 +20,7 @@ int main() {
 
   private_message = "delete messge!";
   public_message = "delete messge!";
+  default_message = "??????????";
 
   printf("== after ===\n");
   work();
